@@ -5,3 +5,23 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Emanuel', :city => cities.first)
+
+Product.delete_all
+
+Product.create(
+  :title => 'Programming Ruby 1.9',
+  :description => %{
+    Ruby is a language of careful balance. Its creator, Yukihiro matz Matsumoto, blended parts of his favorite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that balanced functional programming with imperative programming.
+  },
+  :image_url => '/images/ruby.png',
+  :price => 79.9
+)
+
+Product.create(
+  :title => 'Introduction to algorithms',
+  :description => %{
+    Introduction to Algorithms is a book by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein. It is used as the textbook for algorithms courses at many universities. It is also one of the most commonly cited references for algorithms in published papers,[citation needed] with over 4900 citations documented on CiteSeerX.[1] The book sold half a million copies during its first 20 years.
+  },
+  :image_url => '/images/clrs.png',
+  :price => 49.9
+)
