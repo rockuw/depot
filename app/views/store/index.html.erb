@@ -6,9 +6,11 @@
 
 <% @products.each do |product| %>
   <div class="entry">
-    <%= image_tag product.image_url %>
+    <div class="image_line"><%= image_tag product.image_url %></div>
     <h3><%= product.title %></h3>
-    <%= sanitize product.description %>
+    <p class="description_line">
+      <%= sanitize product.description %>
+    </p>
     <div class="price_line">
       <span class="price"><%= number_to_currency(product.price) %></span>
     </div>

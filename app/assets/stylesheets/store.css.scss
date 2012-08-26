@@ -41,3 +41,28 @@
   color: #bfb;
   font-size: small;
 }
+
+.entry{
+  height: 150px;
+}
+
+.entry .description_line{
+  height: 80px;
+}
+
+.entry .price_line{
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+}
+
+.entry .image_line{
+  float: left;
+  height: 150px;
+  margin-right: 10px;
+  border-right: solid silver 1px;
+}
+
+.entry .image_line img{
+  height: 150px;
+}
