@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120826094655) do
+ActiveRecord::Schema.define(:version => 20120826120620) do
 
 # Could not dump table "blogs" because of following StandardError
 #   Unknown type 'test' for column 'desc'
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20120826094655) do
     t.datetime "created_at",                :null => false
     t.datetime "updated_at",                :null => false
     t.integer  "quantity",   :default => 1
+    t.decimal  "price"
   end
 
   create_table "products", :force => true do |t|
