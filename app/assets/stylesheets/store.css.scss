@@ -42,20 +42,27 @@
   font-size: small;
 }
 
+// book entry
 .entry{
   height: 150px;
 }
 
+// book description
 .entry .description_line{
   height: 80px;
 }
 
-.entry .price_line{
+// book price
+.entry .price_line .price{
   font-size: 18px;
-  color: red;
   font-weight: bold;
 }
 
+.entry .price_line form, .entry .price_line form div{
+  display: inline;
+}
+
+// book image
 .entry .image_line{
   float: left;
   height: 150px;
