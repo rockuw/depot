@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Depot</title>
+  <title>RockU's Online Bookstore</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
+<body id="store">
+  <div id="banner">
+    <%= image_tag 'rails.png' %>
+    <%= @page_title || "RockU's Bookshelf" %>
+  </div>
+  <div id="columns">
+    <div id="side">
+      <a href="/">Home</a> <br />
+      <a href="#">News</a> <br />
+      <a href="#">FAQ</a> <br />
+      <a href="#">Contact</a> <br />
+      <br />
+      <a href="#"><%= Time.now %></a>
+    </div>
+    <div id="main">
+      <%= yield %>
+    </div>
+  </div>
 </body>
 </html>
