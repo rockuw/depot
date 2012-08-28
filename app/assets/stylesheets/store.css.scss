@@ -42,6 +42,18 @@
   font-size: small;
 }
 
+// sidebar cart
+#cart, #cart table{
+    font-size: smaller;
+    color: white;
+}
+
+#cart table{
+    border-top: 1px solid #595;
+    border-bottom: 1px solid #595;
+    margin-bottom: 10px;
+}
+
 // book entry
 .entry{
   height: 150px;
