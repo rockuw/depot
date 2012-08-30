@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20120829083414) do
 
-# Could not dump table "blogs" because of following StandardError
-#   Unknown type 'test' for column 'desc'
-
   create_table "carts", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
