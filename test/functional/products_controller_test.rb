@@ -48,6 +48,10 @@ class ProductsControllerTest < ActionController::TestCase
   end
 
   test "should destroy product" do
+    # delete the orders and line_items for the products to be destroyed correctly
+    Order.delete_all
+    LineItem.delete_all
+
     assert_difference('Product.count', -1) do
       delete :destroy, id: @product
     end
