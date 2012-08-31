@@ -8,8 +8,14 @@
 </head>
 <body id="store">
   <div id="banner">
+    <%= form_tag store_path, :class => 'locale' do %>
+      <%= select_tag 'set_locale', 
+          options_for_select(LANGUAGES, I18n.locale.to_s),
+          :onchange => 'this.form.submit()' %>
+    <% end %>
+
     <%= image_tag 'rails.png' %>
-    <%= @page_title || "RockU's Bookshelf" %>
+    <%= @page_title || t('.title') %>
   </div>
   <div id="columns">
     <div id="side">
@@ -19,10 +25,10 @@
         <% end %>
       <% end %>
 
-      <a href="/">Home</a> <br />
-      <a href="#">News</a> <br />
-      <a href="#">FAQ</a> <br />
-      <a href="#">Contact</a> <br />
+      <a href="/"><%= t('.home') %></a> <br />
+      <a href="#"><%= t('.news') %></a> <br />
+      <a href="#"><%= t('.faq') %></a> <br />
+      <a href="#"><%= t('.contact') %></a> <br />
       <br />
       <% if session[:user_id] %>
         <br />

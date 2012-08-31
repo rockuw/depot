@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// banner
 #banner{
   background: #9c9;
   padding-top: 10px;
@@ -40,6 +41,11 @@
 #side a{
   color: #bfb;
   font-size: small;
+}
+
+.locale{
+  float: right;
+  margin: -0.25em 0.1em;
 }
 
 // sidebar cart

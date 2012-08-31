@@ -1,0 +1,34 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+cn:
+  layouts:
+    application:
+      title: "洛克的书屋"
+      home: "首页"
+      faq: "FAQ"
+      news: "新闻"
+      contact: "联系我们"
+  store:
+    index:
+      catalog: "目录"
+      add_to_cart: "加入购物车"
+  carts:
+    cart:
+      title: "您的购物车"
+      empty_cart: "清空"
+      checkout: "结算"
+  orders:
+    new:
+      legend: "填写订单详情"
+    form:
+      name: "姓名"
+      address: "地址"
+      email: "电子邮箱"
+      pay_type: "支付方式"
+      pay_prompt: "请选择支付方式"
+      submit: "提交订单"
+    payment_types:
+      check: "支票"
+      credit_card: "信用卡"
+      purchase_order: "货到付款"
