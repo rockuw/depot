@@ -50,6 +50,12 @@ Depot::Application.configure do
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.smtp_settings = {
+    :address => "smtp.sina.com",
+    :authentication => "plain",
+    :user_name => "rockuw_smtp@sina.com",
+    :password => "wordpress"
+  }
 
   # Enable threaded mode
   # config.threadsafe!

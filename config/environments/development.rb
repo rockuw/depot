@@ -19,12 +19,6 @@ Depot::Application.configure do
   # Config a SMTP mailer
   config.action_mailer.delivery_method = :test
   # SMTP tested, change it back to :test to avoid the latency connecting to smtp.sina.com
-  config.action_mailer.smtp_settings = {
-    :address => "smtp.sina.com",
-    :authentication => "plain",
-    :user_name => "rockuw_smtp@sina.com",
-    :password => "wordpress"
-  }
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
